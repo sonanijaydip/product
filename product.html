@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function check(n)
+		{
+
+			var x = document.getElementsByClassName('radhe')
+			var arr=[];
+			for (var i = 0; i < x.length; i++) 
+			{
+				if (x[i].checked == true)
+				{
+					arr.push(x[i].value)
+				}
+					
+			}
+			document.getElementById('a1').value = arr
+
+		}
+	</script>
+</head>
+<body>
+
+	<style type="text/css">
+		.radhe{
+			height: 30px;
+			width: 30px;
+		}
+		.radhe1{
+			width: 40%;
+			height: 50px;
+		}
+		.main{
+		
+		}
+	</style>
+	<div class="main">
+	<input type="checkbox" class="radhe" id="b1" onchange="check('1')" value="Virat Kohli," name=""> Virat Kohli<br><br>
+	<input type="checkbox" class="radhe" id="b2" onchange="check('2')" value="Rohit Sharma," name=""> Rohit Sharma<br><br>
+	<input type="checkbox" class="radhe" id="b3" onchange="check('3')" value="Suryakumar Yadav," name=""> Suryakuymar Yadav<br><br>
+	<input type="checkbox" class="radhe" id="b4" onchange="check('4')" value="Ravindra Jadeja," name=""> Ravindra Jadeja<br><br>
+	<input type="checkbox" class="radhe" id="b5" onchange="check('5')" value="Kuldeep Yadav," name=""> Kuldeep Yadav<br><br>
+	<input type="checkbox" class="radhe" id="b6" onchange="check('6')" value="Mahendra SIngh Dhoni, " name=""> Mahendrasinh Dhoni<br><br>
+	<input type="checkbox" class="radhe" id="b7" onchange="check('7')" value="Rinku Singh, " name=""> Rinku Singh<br><br>
+	<input type="checkbox" class="radhe" id="b8" onchange="check('8')" value="Ravinchandran Ashwin, " name=""> Ravichandran Ashwin<br><br>
+	<input type="checkbox" class="radhe" id="b9" onchange="check('9')" value="Shubhaman Gill, " name=""> Shubham Gill<br><br>
+	<input type="checkbox" class="radhe" id="b10" onchange="check('10')" value="Hardik Pandya, " name=""> Hardik Pandya<br><br>
+	<input type="text" class="radhe1" id="a1" name="">
+	</div>
+</body>
+</html>
